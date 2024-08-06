@@ -16,10 +16,6 @@ Exploratory Data Analysis (EDA) was conducted to gain insights into the dataset 
 
 - **Data Distribution**: Analyzed the distribution of key features such as transaction amounts and frequencies. This helped in understanding the typical transaction behaviors and identifying anomalies indicative of fraud.
   
-- **Class Imbalance**: Evaluated the balance between fraudulent and non-fraudulent transactions, revealing a significant imbalance. This is critical for guiding model selection and evaluation, as many models are sensitive to class distribution.
-
-- **Correlation Analysis**: Investigated correlations between features to identify redundant or highly correlated variables that could be reduced to simplify models and improve performance.
-
 - **Temporal Patterns**: Analyzed the time-based patterns in transaction data, such as identifying peak hours for fraudulent activity, which informed the feature engineering process.
 
 - **Category Analysis**: Explored categorical features like merchant categories to understand which types of transactions are more prone to fraud.
