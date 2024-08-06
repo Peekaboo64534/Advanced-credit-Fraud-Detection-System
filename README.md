@@ -10,6 +10,22 @@ Fraud detection is critical in the financial sector to prevent unauthorized tran
 
 The dataset used in this project is the "Credit Card Transactions Dataset" available on [Kaggle](https://www.kaggle.com/datasets/priyamchoksi/credit-card-transactions-dataset). It includes features such as transaction amount, merchant category, and transaction time, essential for identifying fraudulent activities.
 
+## Exploratory Data Analysis (EDA)
+
+Exploratory Data Analysis (EDA) was conducted to gain insights into the dataset and guide the subsequent modeling process. Key steps and findings from the EDA include:
+
+- **Data Distribution**: Analyzed the distribution of key features such as transaction amounts and frequencies. This helped in understanding the typical transaction behaviors and identifying anomalies indicative of fraud.
+  
+- **Class Imbalance**: Evaluated the balance between fraudulent and non-fraudulent transactions, revealing a significant imbalance. This is critical for guiding model selection and evaluation, as many models are sensitive to class distribution.
+
+- **Correlation Analysis**: Investigated correlations between features to identify redundant or highly correlated variables that could be reduced to simplify models and improve performance.
+
+- **Temporal Patterns**: Analyzed the time-based patterns in transaction data, such as identifying peak hours for fraudulent activity, which informed the feature engineering process.
+
+- **Category Analysis**: Explored categorical features like merchant categories to understand which types of transactions are more prone to fraud.
+
+Visualizations such as histograms, box plots, heatmaps, and bar charts were used extensively to facilitate these analyses, providing a clear view of the data and supporting hypothesis generation.
+
 ## Methodology
 
 ### Data Preprocessing
@@ -31,6 +47,7 @@ Multiple machine learning algorithms were employed to build predictive models, i
 ### Model Evaluation
 
 - **Metrics**: Models were evaluated using metrics such as precision, recall, F1-score, and ROC-AUC. These metrics provide a comprehensive view of each model's performance, particularly in handling the imbalanced nature of fraud detection.
+- **Cross-Validation**: Performed to ensure the models' generalizability and robustness across different subsets of data.
 
 ## Results
 
@@ -67,4 +84,5 @@ Clone this repository and install the dependencies:
 
 ```bash
 git clone https://github.com/Peekaboo64534/Advanced-credit-Fraud-Detection-System.git
-pip install -r requirements.txt
+
+
